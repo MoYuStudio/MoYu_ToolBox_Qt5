@@ -1,0 +1,22 @@
+
+Python Vison :
+
+    Python 3.8.10
+
+Pypl install :
+
+    pip install pip -U
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+    pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+
+    Unix/MacOS/Linux
+    pip3 install -r note/dev/package
+
+    pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r note/dev/package
+
+    Windows
+    pip install -r note\dev\package
+
+    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r note\dev\package

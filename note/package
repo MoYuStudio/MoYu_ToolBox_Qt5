@@ -1,0 +1,4 @@
+
+# QT User Interface
+pyqt5 == 5.15.6
+pyqt5-tools == 5.15.2.1.2

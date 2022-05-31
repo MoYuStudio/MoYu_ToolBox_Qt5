@@ -1,0 +1,4 @@
+
+GUI：
+    pyuic5 -o src\module\data\gui\layout.py src\module\data\gui\layout.ui
+    
