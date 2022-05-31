@@ -42,11 +42,9 @@ class GUI:
     def pushButton_mcserver_mod_clicked(self):
 
         def run():
-            ad = anonfiles_downloader.AnonfilesDownloader('mc_server_mod.zip','src/module/data/cloud_files','https://anonfiles.com/Xbj9F3lay4/mc_server_mod_zip')
-            ad.download()
-        thread = threading.Thread(target = run,
-                        args= ()
-                        )
+            
+            
+        thread = threading.Thread(target = run,args= ())
         thread.start()
 
 if __name__ == '__main__':

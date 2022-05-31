@@ -34,3 +34,6 @@ class AnonfilesDownloader:
 if __name__ == '__main__':
     ad = AnonfilesDownloader('test.txt','src/module/data','https://anonfiles.com/j184D7ldyb/test_txt')
     ad.download()
+
+# ad = anonfiles_downloader.AnonfilesDownloader('mc_server_mod.zip','src/module/data/cloud_files','https://anonfiles.com/Xbj9F3lay4/mc_server_mod_zip')
+# ad.download()
