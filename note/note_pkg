@@ -1,4 +1,6 @@
 
-GUI：
+UT ui file to py file：
     pyuic5 -o src\module\data\gui\layout.py src\module\data\gui\layout.ui
     
+pyinstaller:
+    pyinstaller -F -w -i src\module\data\gui\pic\MoYu_ToolBox.ico main.py
