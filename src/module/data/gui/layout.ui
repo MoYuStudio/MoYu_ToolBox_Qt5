@@ -23,8 +23,14 @@
      <height>401</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -33,37 +39,61 @@
     <widget class="QPushButton" name="pushButton_liveass">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>100</y>
-       <width>101</width>
-       <height>41</height>
+       <x>10</x>
+       <y>90</y>
+       <width>121</width>
+       <height>71</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>直播姬</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButton_androidtopc">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>180</y>
-       <width>101</width>
-       <height>51</height>
+       <x>10</x>
+       <y>170</y>
+       <width>121</width>
+       <height>101</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>安卓投屏</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="pushButton_obs">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>40</y>
-       <width>101</width>
-       <height>41</height>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>71</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>OBS</string>
@@ -77,11 +107,19 @@
     <widget class="QPushButton" name="pushButton_mcserver_v">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>281</width>
-       <height>91</height>
+       <x>10</x>
+       <y>10</y>
+       <width>251</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>Minecraft服务器 [原版服]</string>
@@ -96,11 +134,19 @@
     <widget class="QPushButton" name="pushButton_mcserver_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>130</y>
-       <width>281</width>
-       <height>91</height>
+       <x>10</x>
+       <y>70</y>
+       <width>251</width>
+       <height>61</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>Minecraft服务器 [模组服]</string>
@@ -120,11 +166,19 @@
     <widget class="QPushButton" name="pushButton_autoInput">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>171</width>
-       <height>71</height>
+       <x>10</x>
+       <y>10</y>
+       <width>191</width>
+       <height>61</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>AutoInput 自动点击脚本</string>
@@ -138,11 +192,19 @@
     <widget class="QPushButton" name="pushButton_mcserver_mod_download">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>140</y>
-       <width>261</width>
+       <x>20</x>
+       <y>50</y>
+       <width>281</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>Minecraft服务器 [模组服] 客户端下载</string>
@@ -157,11 +219,19 @@
     <widget class="QPushButton" name="pushButton_mcserver_v_download">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>110</y>
-       <width>261</width>
+       <x>20</x>
+       <y>20</y>
+       <width>281</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>Minecraft服务器 [原版服] 客户端下载</string>
@@ -173,6 +243,26 @@
       <bool>false</bool>
      </property>
     </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>411</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color:rgb(170, 255, 127) ;
+</string>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tabWidget_setting">
     <attribute name="title">
@@ -181,11 +271,19 @@
     <widget class="QPushButton" name="pushButton_about">
      <property name="geometry">
       <rect>
-       <x>520</x>
-       <y>250</y>
-       <width>75</width>
-       <height>23</height>
+       <x>320</x>
+       <y>300</y>
+       <width>101</width>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+background-color: rgb(255, 170, 127);
+
+</string>
      </property>
      <property name="text">
       <string>关于</string>
@@ -194,11 +292,14 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>490</x>
+       <x>440</x>
        <y>300</y>
-       <width>151</width>
+       <width>201</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;</string>
      </property>
      <property name="text">
       <string>Copyright By WilsonVinson</string>
@@ -207,11 +308,19 @@
     <widget class="QCheckBox" name="checkBox_autostart">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>40</y>
+       <x>40</x>
+       <y>20</y>
        <width>161</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+
+
+</string>
      </property>
      <property name="text">
       <string>开机自动启动</string>
@@ -220,11 +329,18 @@
     <widget class="QCheckBox" name="checkBox_autoupdata">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>100</y>
+       <x>40</x>
+       <y>70</y>
        <width>161</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+
+</string>
      </property>
      <property name="text">
       <string>自动更新</string>
