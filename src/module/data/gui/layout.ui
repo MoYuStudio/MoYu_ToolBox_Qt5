@@ -15,7 +15,7 @@
    <string>MoYu ToolBox 摸鱼工具箱</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgba(117, 117, 117, 20);</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
    <item row="0" column="0">
@@ -27,11 +27,11 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25 9pt &quot;微软雅黑 Light&quot;;
-background-color: rgb(79, 79, 79);</string>
+      <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="tabWidget_hub">
       <attribute name="title">
@@ -72,11 +72,22 @@ QPushButton:pressed{
        <item row="2" column="0">
         <widget class="QPushButton" name="pushButton_androidtopc">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -87,11 +98,22 @@ background-color: rgb(255, 170, 127);
        <item row="0" column="1">
         <widget class="QPushButton" name="pushButton_liveass">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -109,11 +131,22 @@ background-color: rgb(255, 170, 127);
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButton_mcserver_v">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -130,11 +163,22 @@ background-color: rgb(255, 170, 127);
        <item row="0" column="1">
         <widget class="QPushButton" name="pushButton_mcserver_mod">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -158,11 +202,22 @@ background-color: rgb(255, 170, 127);
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButton_autoInput">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -172,40 +227,30 @@ background-color: rgb(255, 170, 127);
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_2">
+     <widget class="QWidget" name="tabWidget_download">
       <attribute name="title">
        <string>Download</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_mcserver_mod_download">
-         <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
-</string>
-         </property>
-         <property name="text">
-          <string>Minecraft服务器 [模组服] 客户端下载</string>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="1">
         <widget class="QPushButton" name="pushButton_mcserver_v_download">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">
@@ -219,17 +264,51 @@ background-color: rgb(255, 170, 127);
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
-        <widget class="QProgressBar" name="progressBar">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_mcserver_mod_download">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color:rgb(170, 255, 127) ;
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
-         <property name="value">
-          <number>24</number>
+         <property name="text">
+          <string>Minecraft服务器 [模组服] 客户端下载</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser_download">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(76, 76, 76);
+color: rgb(0, 255, 0);
+font: 9pt &quot;Impact&quot;;</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Impact'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'微软雅黑'; font-size:12pt; font-weight:600; color:#00ff00;&quot;&gt;[MoYuStudio下载系统]&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -258,11 +337,22 @@ border-radius:10px;
        <item row="4" column="2">
         <widget class="QPushButton" name="pushButton_about">
          <property name="styleSheet">
-          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
 </string>
          </property>
          <property name="text">

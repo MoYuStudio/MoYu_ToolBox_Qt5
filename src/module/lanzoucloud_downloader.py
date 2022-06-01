@@ -22,9 +22,10 @@ class LanZouCloudDownloader:
 
         return list
 
-    def download(self,list_name):
+    def download(self,list_name,print_state):
         def download_done(file_name):
-                print(file_name+' '*3+'done')
+            print_state('download',file_data['name'])
+
         list = self.download_list(list_name)
 
         for code in range(len(list)):
@@ -35,6 +36,7 @@ class LanZouCloudDownloader:
                 for file in f.namelist():
                     f.extract(file,file_data['unpack_path'])
                 f.close()
+                
             if file_data['move'] == True:
                 for file in os.listdir(file_data['unpack_path']+file_data['name'][:-3]):
                     full_path = os.path.join(file_data['unpack_path']+file_data['name'][:-3], file)
@@ -44,12 +46,16 @@ class LanZouCloudDownloader:
             full_path = self.runingfile_path+'/'+file_name
             try:
                 os.remove(full_path)
+                print_state('remove',file_name)
             except:
                 pass
             try:
                 os.rmdir(full_path)
+                print_state('remove',file_name)
             except:
                 pass
+
+        print_state('done',list_name)
 
 if __name__ == '__main__':
 
