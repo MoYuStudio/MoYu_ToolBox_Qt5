@@ -8,7 +8,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 import data.gui
-import anonfiles_downloader
+import lanzoucloud_downloader
 
 class GUI:
     def __init__(self):
@@ -41,10 +41,11 @@ class GUI:
 
     def pushButton_mcserver_mod_clicked(self):
 
-        def run():
-            
-            
-        thread = threading.Thread(target = run,args= ())
+        def run_threading():
+            dr = lanzoucloud_downloader.LanZouCloudDownloader()
+            dr.download('mc_server_mod')
+        
+        thread = threading.Thread(target = run_threading,args= ())
         thread.start()
 
 if __name__ == '__main__':
