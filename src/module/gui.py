@@ -26,10 +26,14 @@ class GUI:
     def slot(self):
         # tabWidget MC
         self.gui.pushButton_mcserver_v.clicked.connect(self.print_coming_soon)
-        self.gui.pushButton_mcserver_mod.clicked.connect(self.pushButton_mcserver_mod_clicked)
+        self.gui.pushButton_mcserver_mod.clicked.connect(self.print_coming_soon)
 
         # tabWidget Auto
         self.gui.pushButton_autoInput.clicked.connect(self.print_coming_soon)
+
+        # tabWidget Download
+        self.gui.pushButton_mcserver_v_download.clicked.connect(self.print_coming_soon)
+        self.gui.pushButton_mcserver_mod_download.clicked.connect(self.pushButton_mcserver_mod_download_clicked)
 
         # tabWidget Setting
         self.gui.checkBox_autostart.clicked.connect(self.print_coming_soon)
@@ -39,7 +43,7 @@ class GUI:
     def print_coming_soon(self):
         print('coming soon')
 
-    def pushButton_mcserver_mod_clicked(self):
+    def pushButton_mcserver_mod_download_clicked(self):
 
         def run_threading():
             dr = lanzoucloud_downloader.LanZouCloudDownloader()
