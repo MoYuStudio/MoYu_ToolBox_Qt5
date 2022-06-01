@@ -14,27 +14,43 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Window(object):
     def setupUi(self, Window):
         Window.setObjectName("Window")
-        Window.resize(700, 400)
+        Window.resize(718, 318)
+        Window.setStyleSheet("background-color: rgba(117, 117, 117, 20);")
+        self.gridLayout_6 = QtWidgets.QGridLayout(Window)
+        self.gridLayout_6.setObjectName("gridLayout_6")
         self.tabWidget = QtWidgets.QTabWidget(Window)
-        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 701, 401))
+        self.tabWidget.setMinimumSize(QtCore.QSize(700, 300))
         self.tabWidget.setStyleSheet("font: 25 9pt \"微软雅黑 Light\";\n"
-"border:2px;\n"
-"border-radius:10px;\n"
-"background-color: rgb(255, 255, 255);")
+"background-color: rgb(79, 79, 79);")
         self.tabWidget.setObjectName("tabWidget")
-        self.tab = QtWidgets.QWidget()
-        self.tab.setObjectName("tab")
-        self.pushButton_liveass = QtWidgets.QPushButton(self.tab)
-        self.pushButton_liveass.setGeometry(QtCore.QRect(10, 90, 121, 71))
-        self.pushButton_liveass.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
-"border:2px;\n"
-"border-radius:10px;\n"
-"background-color: rgb(255, 170, 127);\n"
-"\n"
+        self.tabWidget_hub = QtWidgets.QWidget()
+        self.tabWidget_hub.setObjectName("tabWidget_hub")
+        self.tabWidget.addTab(self.tabWidget_hub, "")
+        self.tabWidget_up = QtWidgets.QWidget()
+        self.tabWidget_up.setObjectName("tabWidget_up")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.tabWidget_up)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.pushButton_obs = QtWidgets.QPushButton(self.tabWidget_up)
+        self.pushButton_obs.setStyleSheet("QPushButton{\n"
+"    font: 12pt \"微软雅黑\";\n"
+"    color:white;\n"
+"    background-color:rgb(14 , 150 , 254);\n"
+"    border-radius:5px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    color:white;\n"
+"    background-color:rgb(44 , 137 , 255);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    color:white;\n"
+"    background-color:rgb(14 , 135 , 228);\n"
+"    padding-left:3px;\n"
+"    padding-top:3px;\n"
+"}\n"
 "")
-        self.pushButton_liveass.setObjectName("pushButton_liveass")
-        self.pushButton_androidtopc = QtWidgets.QPushButton(self.tab)
-        self.pushButton_androidtopc.setGeometry(QtCore.QRect(10, 170, 121, 101))
+        self.pushButton_obs.setObjectName("pushButton_obs")
+        self.gridLayout_4.addWidget(self.pushButton_obs, 0, 0, 1, 1)
+        self.pushButton_androidtopc = QtWidgets.QPushButton(self.tabWidget_up)
         self.pushButton_androidtopc.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -42,20 +58,22 @@ class Ui_Window(object):
 "\n"
 "")
         self.pushButton_androidtopc.setObjectName("pushButton_androidtopc")
-        self.pushButton_obs = QtWidgets.QPushButton(self.tab)
-        self.pushButton_obs.setGeometry(QtCore.QRect(10, 10, 91, 71))
-        self.pushButton_obs.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
+        self.gridLayout_4.addWidget(self.pushButton_androidtopc, 2, 0, 1, 1)
+        self.pushButton_liveass = QtWidgets.QPushButton(self.tabWidget_up)
+        self.pushButton_liveass.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
 "background-color: rgb(255, 170, 127);\n"
 "\n"
 "")
-        self.pushButton_obs.setObjectName("pushButton_obs")
-        self.tabWidget.addTab(self.tab, "")
+        self.pushButton_liveass.setObjectName("pushButton_liveass")
+        self.gridLayout_4.addWidget(self.pushButton_liveass, 0, 1, 1, 1)
+        self.tabWidget.addTab(self.tabWidget_up, "")
         self.tabWidget_mc = QtWidgets.QWidget()
         self.tabWidget_mc.setObjectName("tabWidget_mc")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.tabWidget_mc)
+        self.gridLayout_5.setObjectName("gridLayout_5")
         self.pushButton_mcserver_v = QtWidgets.QPushButton(self.tabWidget_mc)
-        self.pushButton_mcserver_v.setGeometry(QtCore.QRect(10, 10, 251, 51))
         self.pushButton_mcserver_v.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -65,8 +83,8 @@ class Ui_Window(object):
         self.pushButton_mcserver_v.setAutoDefault(False)
         self.pushButton_mcserver_v.setDefault(False)
         self.pushButton_mcserver_v.setObjectName("pushButton_mcserver_v")
+        self.gridLayout_5.addWidget(self.pushButton_mcserver_v, 0, 0, 1, 1)
         self.pushButton_mcserver_mod = QtWidgets.QPushButton(self.tabWidget_mc)
-        self.pushButton_mcserver_mod.setGeometry(QtCore.QRect(10, 70, 251, 61))
         self.pushButton_mcserver_mod.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -76,11 +94,13 @@ class Ui_Window(object):
         self.pushButton_mcserver_mod.setAutoDefault(False)
         self.pushButton_mcserver_mod.setDefault(False)
         self.pushButton_mcserver_mod.setObjectName("pushButton_mcserver_mod")
+        self.gridLayout_5.addWidget(self.pushButton_mcserver_mod, 0, 1, 1, 1)
         self.tabWidget.addTab(self.tabWidget_mc, "")
         self.tabWidget_auto = QtWidgets.QWidget()
         self.tabWidget_auto.setObjectName("tabWidget_auto")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.tabWidget_auto)
+        self.gridLayout_3.setObjectName("gridLayout_3")
         self.pushButton_autoInput = QtWidgets.QPushButton(self.tabWidget_auto)
-        self.pushButton_autoInput.setGeometry(QtCore.QRect(10, 10, 191, 61))
         self.pushButton_autoInput.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -88,11 +108,13 @@ class Ui_Window(object):
 "\n"
 "")
         self.pushButton_autoInput.setObjectName("pushButton_autoInput")
+        self.gridLayout_3.addWidget(self.pushButton_autoInput, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tabWidget_auto, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
+        self.gridLayout = QtWidgets.QGridLayout(self.tab_2)
+        self.gridLayout.setObjectName("gridLayout")
         self.pushButton_mcserver_mod_download = QtWidgets.QPushButton(self.tab_2)
-        self.pushButton_mcserver_mod_download.setGeometry(QtCore.QRect(20, 50, 281, 21))
         self.pushButton_mcserver_mod_download.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -102,8 +124,8 @@ class Ui_Window(object):
         self.pushButton_mcserver_mod_download.setAutoDefault(False)
         self.pushButton_mcserver_mod_download.setDefault(False)
         self.pushButton_mcserver_mod_download.setObjectName("pushButton_mcserver_mod_download")
+        self.gridLayout.addWidget(self.pushButton_mcserver_mod_download, 0, 2, 1, 1)
         self.pushButton_mcserver_v_download = QtWidgets.QPushButton(self.tab_2)
-        self.pushButton_mcserver_v_download.setGeometry(QtCore.QRect(20, 20, 281, 21))
         self.pushButton_mcserver_v_download.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -113,8 +135,8 @@ class Ui_Window(object):
         self.pushButton_mcserver_v_download.setAutoDefault(False)
         self.pushButton_mcserver_v_download.setDefault(False)
         self.pushButton_mcserver_v_download.setObjectName("pushButton_mcserver_v_download")
+        self.gridLayout.addWidget(self.pushButton_mcserver_v_download, 0, 1, 1, 1)
         self.progressBar = QtWidgets.QProgressBar(self.tab_2)
-        self.progressBar.setGeometry(QtCore.QRect(20, 320, 411, 23))
         self.progressBar.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -122,24 +144,13 @@ class Ui_Window(object):
 "")
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
+        self.gridLayout.addWidget(self.progressBar, 2, 2, 1, 1)
         self.tabWidget.addTab(self.tab_2, "")
         self.tabWidget_setting = QtWidgets.QWidget()
         self.tabWidget_setting.setObjectName("tabWidget_setting")
-        self.pushButton_about = QtWidgets.QPushButton(self.tabWidget_setting)
-        self.pushButton_about.setGeometry(QtCore.QRect(320, 300, 101, 31))
-        self.pushButton_about.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
-"border:2px;\n"
-"border-radius:10px;\n"
-"background-color: rgb(255, 170, 127);\n"
-"\n"
-"")
-        self.pushButton_about.setObjectName("pushButton_about")
-        self.label = QtWidgets.QLabel(self.tabWidget_setting)
-        self.label.setGeometry(QtCore.QRect(440, 300, 201, 31))
-        self.label.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";")
-        self.label.setObjectName("label")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.tabWidget_setting)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.checkBox_autostart = QtWidgets.QCheckBox(self.tabWidget_setting)
-        self.checkBox_autostart.setGeometry(QtCore.QRect(40, 20, 161, 41))
         self.checkBox_autostart.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
@@ -147,15 +158,30 @@ class Ui_Window(object):
 "\n"
 "")
         self.checkBox_autostart.setObjectName("checkBox_autostart")
+        self.gridLayout_2.addWidget(self.checkBox_autostart, 2, 1, 1, 1)
+        self.pushButton_about = QtWidgets.QPushButton(self.tabWidget_setting)
+        self.pushButton_about.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
+"border:2px;\n"
+"border-radius:10px;\n"
+"background-color: rgb(255, 170, 127);\n"
+"\n"
+"")
+        self.pushButton_about.setObjectName("pushButton_about")
+        self.gridLayout_2.addWidget(self.pushButton_about, 4, 2, 1, 1)
+        self.label = QtWidgets.QLabel(self.tabWidget_setting)
+        self.label.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";")
+        self.label.setObjectName("label")
+        self.gridLayout_2.addWidget(self.label, 4, 4, 1, 1)
         self.checkBox_autoupdata = QtWidgets.QCheckBox(self.tabWidget_setting)
-        self.checkBox_autoupdata.setGeometry(QtCore.QRect(40, 70, 161, 41))
         self.checkBox_autoupdata.setStyleSheet("font: 25 12pt \"微软雅黑 Light\";\n"
 "border:2px;\n"
 "border-radius:10px;\n"
 "\n"
 "")
         self.checkBox_autoupdata.setObjectName("checkBox_autoupdata")
+        self.gridLayout_2.addWidget(self.checkBox_autoupdata, 1, 1, 1, 1)
         self.tabWidget.addTab(self.tabWidget_setting, "")
+        self.gridLayout_6.addWidget(self.tabWidget, 0, 0, 1, 1)
 
         self.retranslateUi(Window)
         self.tabWidget.setCurrentIndex(0)
@@ -164,10 +190,11 @@ class Ui_Window(object):
     def retranslateUi(self, Window):
         _translate = QtCore.QCoreApplication.translate
         Window.setWindowTitle(_translate("Window", "MoYu ToolBox 摸鱼工具箱"))
-        self.pushButton_liveass.setText(_translate("Window", "直播姬"))
-        self.pushButton_androidtopc.setText(_translate("Window", "安卓投屏"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidget_hub), _translate("Window", "HUB"))
         self.pushButton_obs.setText(_translate("Window", "OBS"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Window", "Up"))
+        self.pushButton_androidtopc.setText(_translate("Window", "安卓投屏"))
+        self.pushButton_liveass.setText(_translate("Window", "直播姬"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidget_up), _translate("Window", "UP"))
         self.pushButton_mcserver_v.setText(_translate("Window", "Minecraft服务器 [原版服]"))
         self.pushButton_mcserver_mod.setText(_translate("Window", "Minecraft服务器 [模组服]"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidget_mc), _translate("Window", "MC"))
@@ -176,8 +203,8 @@ class Ui_Window(object):
         self.pushButton_mcserver_mod_download.setText(_translate("Window", "Minecraft服务器 [模组服] 客户端下载"))
         self.pushButton_mcserver_v_download.setText(_translate("Window", "Minecraft服务器 [原版服] 客户端下载"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Window", "Download"))
+        self.checkBox_autostart.setText(_translate("Window", "开机自动启动"))
         self.pushButton_about.setText(_translate("Window", "关于"))
         self.label.setText(_translate("Window", "Copyright By WilsonVinson"))
-        self.checkBox_autostart.setText(_translate("Window", "开机自动启动"))
         self.checkBox_autoupdata.setText(_translate("Window", "自动更新"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabWidget_setting), _translate("Window", "Setting"))

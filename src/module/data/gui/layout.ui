@@ -7,347 +7,298 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>400</height>
+    <width>718</width>
+    <height>318</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MoYu ToolBox 摸鱼工具箱</string>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>701</width>
-     <height>401</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 25 9pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <widget class="QWidget" name="tab">
-    <attribute name="title">
-     <string>Up</string>
-    </attribute>
-    <widget class="QPushButton" name="pushButton_liveass">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>121</width>
-       <height>71</height>
-      </rect>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(117, 117, 117, 20);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>700</width>
+       <height>300</height>
+      </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+      <string notr="true">font: 25 9pt &quot;微软雅黑 Light&quot;;
+background-color: rgb(79, 79, 79);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabWidget_hub">
+      <attribute name="title">
+       <string>HUB</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabWidget_up">
+      <attribute name="title">
+       <string>UP</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_obs">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 12pt &quot;微软雅黑&quot;;
+	color:white;
+	background-color:rgb(14 , 150 , 254);
+	border-radius:5px;
+}
+QPushButton:hover{
+	color:white;
+	background-color:rgb(44 , 137 , 255);
+}
+QPushButton:pressed{
+	color:white;
+	background-color:rgb(14 , 135 , 228);
+	padding-left:3px;
+	padding-top:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>OBS</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_androidtopc">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>直播姬</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_androidtopc">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>170</y>
-       <width>121</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>安卓投屏</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_liveass">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>安卓投屏</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_obs">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>91</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>直播姬</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWidget_mc">
+      <attribute name="title">
+       <string>MC</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_mcserver_v">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>OBS</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tabWidget_mc">
-    <attribute name="title">
-     <string>MC</string>
-    </attribute>
-    <widget class="QPushButton" name="pushButton_mcserver_v">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>251</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>Minecraft服务器 [原版服]</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_mcserver_mod">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>Minecraft服务器 [原版服]</string>
-     </property>
-     <property name="autoDefault">
-      <bool>false</bool>
-     </property>
-     <property name="default">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_mcserver_mod">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>251</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>Minecraft服务器 [模组服]</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWidget_auto">
+      <attribute name="title">
+       <string>Auto</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_autoInput">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>Minecraft服务器 [模组服]</string>
-     </property>
-     <property name="autoDefault">
-      <bool>false</bool>
-     </property>
-     <property name="default">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tabWidget_auto">
-    <attribute name="title">
-     <string>Auto</string>
-    </attribute>
-    <widget class="QPushButton" name="pushButton_autoInput">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>191</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>AutoInput 自动点击脚本</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Download</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_mcserver_mod_download">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>AutoInput 自动点击脚本</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tab_2">
-    <attribute name="title">
-     <string>Download</string>
-    </attribute>
-    <widget class="QPushButton" name="pushButton_mcserver_mod_download">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>50</y>
-       <width>281</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>Minecraft服务器 [模组服] 客户端下载</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_mcserver_v_download">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>Minecraft服务器 [模组服] 客户端下载</string>
-     </property>
-     <property name="autoDefault">
-      <bool>false</bool>
-     </property>
-     <property name="default">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_mcserver_v_download">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>281</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-background-color: rgb(255, 170, 127);
-
-</string>
-     </property>
-     <property name="text">
-      <string>Minecraft服务器 [原版服] 客户端下载</string>
-     </property>
-     <property name="autoDefault">
-      <bool>false</bool>
-     </property>
-     <property name="default">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>320</y>
-       <width>411</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>Minecraft服务器 [原版服] 客户端下载</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QProgressBar" name="progressBar">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color:rgb(170, 255, 127) ;
 </string>
-     </property>
-     <property name="value">
-      <number>24</number>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tabWidget_setting">
-    <attribute name="title">
-     <string>Setting</string>
-    </attribute>
-    <widget class="QPushButton" name="pushButton_about">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>300</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWidget_setting">
+      <attribute name="title">
+       <string>Setting</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="checkBox_autostart">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+border:2px;
+border-radius:10px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>开机自动启动</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="pushButton_about">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 background-color: rgb(255, 170, 127);
 
 </string>
-     </property>
-     <property name="text">
-      <string>关于</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>300</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Copyright By WilsonVinson</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_autostart">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>20</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
-border:2px;
-border-radius:10px;
-
-
-</string>
-     </property>
-     <property name="text">
-      <string>开机自动启动</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_autoupdata">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>70</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
+         </property>
+         <property name="text">
+          <string>关于</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Copyright By WilsonVinson</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="checkBox_autoupdata">
+         <property name="styleSheet">
+          <string notr="true">font: 25 12pt &quot;微软雅黑 Light&quot;;
 border:2px;
 border-radius:10px;
 
 </string>
-     </property>
-     <property name="text">
-      <string>自动更新</string>
-     </property>
+         </property>
+         <property name="text">
+          <string>自动更新</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
-   </widget>
-  </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
